@@ -1,0 +1,339 @@
+.getint-section {
+  background-color: White;
+  background-position: top center;
+  background-size: cover;
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+
+.getintbg {
+  /* width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background: #03A796;
+  position: absolute;
+  left: -100%;
+  top: 0;
+  z-index: 1;
+  background: url('../images/getintouch-bgo.webp') no-repeat;
+  background-size: contain;
+  background-position: top left;
+  z-index: 0; */
+
+  content: "";
+  background: #D0F7F0;
+  -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  opacity: 0.7;
+  position: absolute;
+  height: 344px;
+  width: 344px;
+  left: -172px;
+  top: 5%;
+}
+
+.getint-section .container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.getint-section .container .row {
+  z-index: 2;
+}
+
+.getint-section .content-box {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  vertical-align: middle;
+  padding-right: 10%;
+  height: 100%;
+}
+
+.getint-section .content-box h2 {
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 69px;
+
+  color: #05304D;
+}
+
+.getint-section .content-box .h1 {
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 120px;
+  line-height: 100px;
+  color: #05304D;
+}
+.getint-section .get-para {
+  color: #05304D;
+font-size: 20px;
+font-family: Helvetica;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+/* form */
+
+.getint-section label {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 130%;
+  color: #03AD9B;
+}
+
+.getint-section input[type=text],
+.getint-section input[type=email],
+.getint-section textarea,
+.getint-section select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 2px solid #03AD9B;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: transparent;
+  border: 2px solid #03AD9B;
+  border-radius: 10px;
+}
+
+.getint-section input[type=text],
+.getint-section input[type=email],
+.getint-section select {
+  height: 60px;
+}
+
+.getint-section textarea {
+  height: 150px;
+  background-color: transparent;
+}
+
+.getint-section input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.getint-section input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.getint-section button {
+  padding: 20px 35px;
+  color: #ffffff;
+  background: linear-gradient(180deg, #01C6B2 0%, #048D7F 128.35%);
+  border: 1px solid #FFFFFF;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+  text-align: right;
+}
+
+.text-right {
+  text-align: right;
+}
+.getint-section .errormsg{
+  color: red;
+  font-weight: 600;
+}
+
+/*or 480 Resolution */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  .getint-section.mobile h2 {
+    color: #05304D;
+    font-size: 26px;
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: -10px;
+  }
+  .getint-section .errormsg{
+    color: red;
+    font-weight: 500;
+  }
+  .getint-section.mobile .animate-underline::after{
+    /* margin-top: 40px !important; */
+    position: absolute;
+    top: 10%;
+  }
+
+  .getint-section.mobile .h1 {
+    color: #05304D;
+    font-size: 50px;
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .getint-section.mobile .get-para {
+    color: #05304D;
+    font-size: 16px !important;
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: justify;
+    margin-top: 20px;
+    
+  }
+
+  .getint-section.mobile .container {
+    height: auto;
+
+  }
+  .getint-section.mobile input[type=text],
+.getint-section.mobile input[type=email],
+.getint-section.mobile select {
+  height: 43px;
+   width: 100% !important; 
+   padding: 12px -20px;
+}
+.getint-section.mobile textarea {
+  height: 115px;
+}
+.getint-section.mobile  label{
+  color: #03AD9B;
+font-size: 12px;
+font-family: Work Sans;
+font-style: normal;
+font-weight: 400;
+line-height: 130%;
+}
+.getint-section input[type=submit] {
+  color: var(--neutral-white, #FFF);
+text-align: center;
+font-size: 14px;
+font-family: Helvetica;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+display: flex;
+width: 180px;
+height: 48px;
+padding: 15px 20px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+flex-shrink: 0;
+}
+.getint-section button{
+  padding: 10px 30px !important;
+
+}
+.getint-section.mobile .form-text{
+  /* padding-right: 0% !important; */
+  padding-left: 10px !important;
+}
+
+}
+
+/* For 640 Resolution */
+@media only screen and (min-device-width : 481px) and (max-device-width : 640px) {
+  .getint-section.mobile h2 {
+    color: #05304D;
+    font-size: 26px;
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: -10px;
+  }
+  .getint-section .errormsg{
+    color: red;
+    font-weight: 500;
+  }
+  .getint-section.mobile .animate-underline::after{
+    /* margin-top: 40px !important; */
+    position: absolute;
+    top: 10%;
+  }
+
+  .getint-section.mobile .h1 {
+    color: #05304D;
+    font-size: 50px;
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .getint-section.mobile .get-para {
+    color: #05304D;
+    font-size: 16px !important;
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: justify;
+    margin-top: 20px;
+    
+  }
+
+  .getint-section.mobile .container {
+    height: auto;
+
+  }
+  .getint-section.mobile input[type=text],
+.getint-section.mobile input[type=email],
+.getint-section.mobile select {
+  height: 43px;
+   width: 100% !important; 
+   padding: 12px -20px;
+}
+.getint-section.mobile textarea {
+  height: 115px;
+}
+.getint-section.mobile  label{
+  color: #03AD9B;
+font-size: 12px;
+font-family: Work Sans;
+font-style: normal;
+font-weight: 400;
+line-height: 130%;
+}
+.getint-section input[type=submit] {
+  color: var(--neutral-white, #FFF);
+text-align: center;
+font-size: 14px;
+font-family: Helvetica;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+display: flex;
+width: 180px;
+height: 48px;
+padding: 15px 20px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+flex-shrink: 0;
+}
+.getint-section button{
+  padding: 10px 30px !important;
+
+}
+.getint-section.mobile .form-text{
+  /* padding-right: 0% !important; */
+  padding-left: 10px !important;
+}
+}
